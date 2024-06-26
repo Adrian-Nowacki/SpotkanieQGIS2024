@@ -3277,7 +3277,7 @@ color:#222222
 <span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="fu">png</span>(<span class="at">filename=</span>output, <span class="at">width=</span><span class="dv">800</span>, <span class="at">height=</span><span class="dv">800</span>)</span>
 <span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(Layer, <span class="fu">aes</span>(<span class="at">x =</span> <span class="sc">!!</span><span class="fu">sym</span>(Column1), <span class="at">y =</span> <span class="sc">!!</span><span class="fu">sym</span>(Column2))) <span class="sc">+</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(Layer, <span class="fu">aes</span>(<span class="at">x =</span> Layer[[Column1]], <span class="at">y =</span> Layer[[Column2]])) <span class="sc">+</span></span>
 <span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">5</span>, <span class="at">color =</span> <span class="st">&quot;#222222&quot;</span>) <span class="sc">+</span>  <span class="co"># Zwiększenie rozmiaru punktów</span></span>
 <span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
 <span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> Column1,</span>
@@ -4154,7 +4154,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb23-240"><a href="#cb23-240" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb23-241"><a href="#cb23-241" aria-hidden="true" tabindex="-1"></a><span class="fu">png</span>(<span class="at">filename=</span>output, <span class="at">width=</span><span class="dv">800</span>, <span class="at">height=</span><span class="dv">800</span>)</span>
 <span id="cb23-242"><a href="#cb23-242" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb23-243"><a href="#cb23-243" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(Layer, <span class="fu">aes</span>(<span class="at">x =</span> <span class="sc">!!</span><span class="fu">sym</span>(Column1), <span class="at">y =</span> <span class="sc">!!</span><span class="fu">sym</span>(Column2))) <span class="sc">+</span></span>
+<span id="cb23-243"><a href="#cb23-243" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(Layer, <span class="fu">aes</span>(<span class="at">x =</span> Layer[[Column1]], <span class="at">y =</span> Layer[[Column2]])) <span class="sc">+</span></span>
 <span id="cb23-244"><a href="#cb23-244" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">5</span>, <span class="at">color =</span> <span class="st">&quot;#222222&quot;</span>) <span class="sc">+</span>  <span class="co"># Zwiększenie rozmiaru punktów</span></span>
 <span id="cb23-245"><a href="#cb23-245" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
 <span id="cb23-246"><a href="#cb23-246" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> Column1,</span>
